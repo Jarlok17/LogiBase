@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="UI/">
+        <file>UserMenu.qml</file>
+    </qresource>
+</RCC>
