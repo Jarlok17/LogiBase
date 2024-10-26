@@ -6,6 +6,7 @@ find_package(Qt6 REQUIRED COMPONENTS Core Widgets Qml Quick)
 set(PROJECT_SOURCES
     main.cpp
     qml/core.qrc
+    qml/Menu/menu.qrc
 )
 
 qt_add_executable(core
@@ -13,7 +14,7 @@ qt_add_executable(core
     ${PROJECT_SOURCES}
 )
 
-target_link_libraries(core PRIVATE Qt6::Core Qt6::Widgets Qt6::Quick ui)
+target_link_libraries(core PRIVATE Qt6::Core Qt6::Widgets Qt6::Quick)
 
 set_target_properties(core PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin

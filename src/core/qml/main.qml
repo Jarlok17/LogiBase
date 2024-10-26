@@ -11,5 +11,26 @@ ApplicationWindow {
 
     width: (Qt.platform.os === "android" || Qt.platform.os === "ios") ? Screen.width : Screen.width * 0.8
     height: (Qt.platform.os === "android" || Qt.platform.os === "ios") ? Screen.height : Screen.height * 0.8
+
+    RowLayout {
+        anchors.fill: parent
+
+        Loader {
+            source: "qrc:/Menu/LeftMenu.qml" 
+            Layout.preferredWidth: 200
+        }
+
+        Rectangle {
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+            color: "#ffffff"
+
+            Text {
+                anchors.centerIn: parent
+                text: "Основний вміст"
+                font.pixelSize: 24
+            }
+        }
+    }
 }
 

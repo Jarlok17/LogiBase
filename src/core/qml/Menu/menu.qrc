@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="Menu/">
+        <file>LeftMenu.qml</file>
+    </qresource>
+</RCC>
